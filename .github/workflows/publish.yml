@@ -29,7 +29,7 @@ jobs:
   generate-publish-metadata:
     name: Generate Publish-related Metadata
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 60
     outputs:
       vector_version: ${{ steps.generate-publish-metadata.outputs.vector_version }}
       vector_build_desc: ${{ steps.generate-publish-metadata.outputs.vector_build_desc }}
@@ -184,7 +184,7 @@ jobs:
   deb-verify:
     name: Verify DEB Packages
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 60
     needs:
       - generate-publish-metadata
       - build-linux-packages
@@ -232,7 +232,7 @@ jobs:
   rpm-verify:
     name: Verify RPM Packages
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 60
     needs:
       - generate-publish-metadata
       - build-linux-packages
@@ -283,7 +283,7 @@ jobs:
   macos-verify:
     name: Verify macOS Package
     runs-on: ${{ matrix.runner }}
-    timeout-minutes: 5
+    timeout-minutes: 60
     needs:
       - generate-publish-metadata
       - build-apple-darwin-packages
@@ -313,7 +313,7 @@ jobs:
   publish-docker:
     name: Publish to Docker
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 60
     # Elevated permission required to push Docker images to GitHub Container Registry
     permissions:
       packages: write
@@ -361,7 +361,7 @@ jobs:
           REPOS: "timberio/vector,ghcr.io/vectordotdev/vector"
         uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08 # v3.0.2
         with:
-          timeout_minutes: 15
+          timeout_minutes: 60
           max_attempts: 3
           retry_wait_seconds: 60
           command: make release-docker
