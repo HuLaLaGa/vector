@@ -8,6 +8,7 @@ on:
     tags:
       - v0.*
       - v1.*
+    branches:
       - 0.*
 
 jobs:
