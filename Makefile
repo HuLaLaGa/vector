@@ -744,3 +744,4 @@ fmt:
 .PHONY: build-licenses
 build-licenses:
 	${MAYBE_ENVIRONMENT_EXEC} $(VDEV) build licenses
+
