@@ -13125,7 +13125,7 @@ checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 [[package]]
 name = "vrl"
 version = "0.3.7"
-source = "git+https://github.com/hulalaga/vrl.git?rev=86e858bdfa5ab54fbaa4bd6cac6004fffcc85c4a#86e858bdfa5ab54fbaa4bd6cac6004fffcc85c4a"
+source = "git+https://github.com/hulalaga/vrl.git?rev=6e84fa771235f7a3520a09e8ade559f769406758#6e84fa771235f7a3520a09e8ade559f769406758"
 
 dependencies = [
  "aes",
