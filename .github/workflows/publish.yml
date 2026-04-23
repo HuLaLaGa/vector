@@ -96,7 +96,6 @@ jobs:
     needs:
       - generate-publish-metadata
       - build-linux-packages
-      - deb-verify
     env:
       VECTOR_VERSION: ${{ needs.generate-publish-metadata.outputs.vector_version }}
       VECTOR_BUILD_DESC: ${{ needs.generate-publish-metadata.outputs.vector_build_desc }}
