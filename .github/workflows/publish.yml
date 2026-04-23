@@ -49,7 +49,7 @@ jobs:
 
   build-linux-packages:
     name: Build Vector for ${{ matrix.target }}
-    runs-on: release-builder-linux
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     needs: generate-publish-metadata
     env:
