@@ -13124,9 +13124,9 @@ checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 
 [[package]]
 name = "vrl"
-version = "0.32.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "398a6efaf0e120eae12249f7cc89a82ffd3fa8d98165e341bee6dd9a973bba6a"
+version = "0.3.7"
+source = "git+https://github.com/hulalaga/vrl.git?rev=86e858bdfa5ab54fbaa4bd6cac6004fffcc85c4a#86e858bdfa5ab54fbaa4bd6cac6004fffcc85c4a"
+
 dependencies = [
  "aes",
  "aes-siv",
@@ -13236,6 +13236,7 @@ dependencies = [
  "woothee",
  "xxhash-rust",
  "zstd 0.13.2",
+ "block-modes",
 ]
 
 [[package]]
