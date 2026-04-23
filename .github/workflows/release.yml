@@ -9,7 +9,7 @@ on:
       - v0.*
       - v1.*
     branches:
-      - 0.*
+      - v0.*
 
 jobs:
   Release:
