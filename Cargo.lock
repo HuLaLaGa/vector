@@ -13125,7 +13125,7 @@ checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 [[package]]
 name = "vrl"
 version = "0.31.0"
-source = "git+https://github.com/hulalaga/vrl.git?rev=cf0caddfe054fad86e3ec181a3ca7a844b7db68d#cf0caddfe054fad86e3ec181a3ca7a844b7db68d"
+source = "git+https://github.com/hulalaga/vrl.git?rev=4060b8153edc4c7ae0a93587a377e2d27b55785b#4060b8153edc4c7ae0a93587a377e2d27b55785b"
 dependencies = [
  "aes",
  "aes-siv",
@@ -13235,7 +13235,7 @@ dependencies = [
  "woothee",
  "xxhash-rust",
  "zstd 0.13.2",
- "block-modes",
+ "ecb",
 ]
 
 [[package]]
