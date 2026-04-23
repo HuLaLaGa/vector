@@ -10,6 +10,7 @@ on:
       - v1.*
     branches:
       - v0.*
+      - v1.*
 
 jobs:
   Release:
